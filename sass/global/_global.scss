@@ -1,0 +1,9 @@
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_fonts";
+
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
