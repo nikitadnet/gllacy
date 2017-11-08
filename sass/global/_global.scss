@@ -8,8 +8,13 @@
   @include box-sizing(border-box);
 }
 
+body > input {
+  display: none;
+}
+
 .content-wraper {
-  background-color: #849d8f;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .container {
@@ -37,4 +42,15 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.btn {
+  display: block;
+  font-family: "RobotoBold";
+  color: #ffffff;
+  text-decoration: none;
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }

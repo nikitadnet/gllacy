@@ -23,8 +23,12 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body > input {
+  display: none; }
+
 .content-wraper {
-  background-color: #849d8f; }
+  background-repeat: no-repeat;
+  background-position: center top; }
 
 .container {
   max-width: 1200px;
@@ -46,6 +50,16 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.btn {
+  display: block;
+  font-family: "RobotoBold";
+  color: #ffffff;
+  text-decoration: none;
+  background-image: -moz-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+  background-image: -webkit-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+  background-image: -ms-linear-gradient(90deg, #e74a35 0%, #f26843 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64); }
 
 .main-header {
   padding-left: 2.2%;
@@ -166,3 +180,75 @@
   line-height: 24px;
   color: #ffffff;
   text-decoration: none; }
+
+.slider {
+  padding-left: 2.2%;
+  padding-right: 2.2%;
+  min-width: 95.6%; }
+
+.slide {
+  padding-top: 315px;
+  text-align: center; }
+
+.slider__title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  text-align: center;
+  font-family: "RobotoBold";
+  font-size: 60px;
+  line-height: 60.35px;
+  color: #ffffff; }
+
+.slider-btn {
+  margin: 0 auto;
+  padding-top: 7px;
+  width: 280px;
+  height: 64px;
+  font-size: 32px;
+  line-height: 44px;
+  border-radius: 32px; }
+
+.slider-control {
+  position: relative;
+  left: -530px;
+  top: -45px; }
+
+.slider-control__label {
+  display: inline-block;
+  margin-right: 4px;
+  width: 21px;
+  height: 21px;
+  border: 2px solid white;
+  border-radius: 50%; }
+
+.slider__item--first-slide {
+  display: none; }
+
+.slider__item--second-slide {
+  display: none; }
+
+.slider__item--third-slide {
+  display: none; }
+
+#slide-1:checked ~ .content-wraper label[for="slide-1"],
+#slide-2:checked ~ .content-wraper label[for="slide-2"],
+#slide-3:checked ~ .content-wraper label[for="slide-3"] {
+  background-color: rgba(255, 255, 255, 0.5); }
+
+#slide-1:checked ~ .content-wraper .slider__item--first-slide,
+#slide-2:checked ~ .content-wraper .slider__item--second-slide,
+#slide-3:checked ~ .content-wraper .slider__item--third-slide {
+  display: block; }
+
+#slide-1:checked ~ .content-wraper {
+  background-color: #849d8f;
+  background-image: url(../img/background-slide-1.png); }
+
+#slide-2:checked ~ .content-wraper {
+  background-color: #8996a6;
+  background-image: url(../img/background-slide-2.png); }
+
+#slide-3:checked ~ .content-wraper {
+  background-color: #9d8b84;
+  background-image: url(../img/background-slide-3.png); }

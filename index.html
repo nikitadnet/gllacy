@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <input type="radio" name="slider-control" value="" id="slide-1" checked>
+  <input type="radio" name="slider-control" value="" id="slide-2">
+  <input type="radio" name="slider-control" value="" id="slide-3">
   <div class="content-wraper">
     <div class="container">
       <header class="main-header">
@@ -43,15 +46,32 @@
         </div>
       </header>
       <section class="slider">
-        <h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
-        <a href="#" class="btn slider-btn">Давайте оба!</a>
-        <div class="slider-control">
-          <label for="slide-1" class="slider-control__label"></label>
-          <input type="radio" name="slider-control" value="" id="slide-1" checked>
-          <label for="slide-2" class="slider-control__label"></label>
-          <input type="radio" name="slider-control" value="" id="slide-2">
-          <label for="slide-3" class="slider-control__label"></label>
-          <input type="radio" name="slider-control" value="" id="slide-3">
+        <div class="slide slider__item--first-slide">
+          <h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
+          <a href="#" class="btn slider-btn">Давайте оба!</a>
+          <div class="slider-control">
+            <label for="slide-1" class="slider-control__label"></label>
+            <label for="slide-2" class="slider-control__label"></label>
+            <label for="slide-3" class="slider-control__label"></label>
+          </div>
+        </div>
+        <div class="slide slider__item--second-slide">
+          <h2 class="slider__title">Шоколадный пломбир и лимонный сорбет</h2>
+          <a href="#" class="btn slider-btn">Давайте оба!</a>
+          <div class="slider-control">
+            <label for="slide-1" class="slider-control__label"></label>
+            <label for="slide-2" class="slider-control__label"></label>
+            <label for="slide-3" class="slider-control__label"></label>
+          </div>
+        </div>
+        <div class="slide slider__item--third-slide">
+          <h2 class="slider__title">Пломбир с помадкой и клубничный щербет</h2>
+          <a href="#" class="btn slider-btn">Давайте оба!</a>
+          <div class="slider-control">
+            <label for="slide-1" class="slider-control__label"></label>
+            <label for="slide-2" class="slider-control__label"></label>
+            <label for="slide-3" class="slider-control__label"></label>
+          </div>
         </div>
       </section>
       <section class="banners">
