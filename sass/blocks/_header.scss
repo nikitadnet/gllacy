@@ -1,57 +1,9 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/roboto.woff") format("woff"), url("../fonts/Roboto.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 400; }
-
-@font-face {
-  font-family: "RobotoBold";
-  src: url("../fonts/robotobold.woff") format("woff"), url("../fonts/robotobold.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700; }
-
-@font-face {
-  font-family: "RobotoMedium";
-  src: url("../fonts/robotomedium.woff") format("woff"), url("../fonts/robotomedium.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 500; }
-
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.content-wraper {
-  background-color: #849d8f; }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.visuallyhidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden; }
-
 .main-header {
   padding-left: 2.2%;
   padding-right: 2.2%;
   min-width: 95.6%;
-  max-height: 73px; }
+  max-height: 73px;
+}
 
 .logo {
   float: left;
@@ -59,45 +11,53 @@
   min-height: 64px;
   margin-left: -5px;
   margin-right: 16px;
-  padding-top: 9px; }
+  padding-top: 9px;
+}
 
 .main-nav {
   width: 409px;
   float: left;
-  padding-top: 23px; }
+  padding-top: 23px;
+}
 
 .main-nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0; }
+  font-size: 0;
+}
 
 .main-nav__item {
   display: inline-block;
   vertical-align: top;
   font-size: 16px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 
 .main-nav__link {
   display: block;
   padding: 7px 14px;
   color: #ffffff;
   font-family: "RobotoBold";
-  text-decoration: none; }
-  .main-nav__link::after {
+  text-decoration: none;
+  &::after {
     content: "";
     display: block;
     width: 100%;
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.2); }
-  .main-nav__link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &:hover {
     color: #323232;
     background-color: #f7f6f3;
-    border-radius: 16px; }
+    border-radius: 16px;
+  }
+}
 
 .user-panel {
   float: right;
-  padding-top: 23px; }
+  padding-top: 23px;
+}
 
 .user-panel__btn {
   display: block;
@@ -110,33 +70,41 @@
   line-height: 16px;
   background-color: rgba(255, 255, 255, 0.2);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+
+}
 
 .user-panel__search {
   display: inline-block;
   vertical-align: top;
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 
 .user-panel__btn--search {
   width: 33px;
   border-radius: 50%;
   margin-right: -4px;
-  background-image: url(../img/user-panel-search.png); }
+  background-image: url(../img/user-panel-search.png);
+}
 
 .user-panel__login {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 .user-panel__btn--login {
   width: 93px;
   padding-left: 44px;
   border-radius: 16px;
+
   background-image: url(../img/user-panel-login.png);
-  background-position: 15px; }
+  background-position: 15px;
+}
 
 .user-panel__basket {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+}
 
 .user-panel__btn--basket {
   width: 117px;
@@ -144,19 +112,22 @@
   border-radius: 16px;
   margin-left: 5px;
   background-image: url(../img/user-panel-basket.png);
-  background-position: 15px; }
+  background-position: 15px;
+}
 
 .open-time {
   float: right;
   width: 267px;
-  text-align: right; }
+  text-align: right;
+}
 
 .open-time__time {
   margin: -4px 0 0 0;
   font-family: "RobotoBold";
   font-size: 14px;
   line-height: 16px;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .open-time__phone {
   display: block;
@@ -165,4 +136,5 @@
   font-size: 22px;
   line-height: 24px;
   color: #ffffff;
-  text-decoration: none; }
+  text-decoration: none;
+}
