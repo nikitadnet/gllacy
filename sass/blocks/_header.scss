@@ -72,7 +72,6 @@
   list-style: none;
   background-color: #f8f7f4;
   border-radius: 6px;
-
 }
 
 .main-nav__item:hover .sub-menu {
@@ -106,9 +105,6 @@
   }
 }
 
-
-
-
 .user-panel {
   float: right;
   padding-top: 23px;
@@ -126,20 +122,58 @@
   background-color: rgba(255, 255, 255, 0.2);
   background-repeat: no-repeat;
   background-position: center;
-
+  &:hover {
+    background-color: #f8f7f4;
+    color: #323232;
+  }
 }
 
 .user-panel__search {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   margin-right: 10px;
+
 }
 
 .user-panel__btn--search {
   width: 33px;
+  margin-bottom: 4px;
   border-radius: 50%;
   margin-right: -4px;
   background-image: url(../img/user-panel-search.png);
+  &:hover {
+    background-image: url(../img/user-panel-search-click.png);
+  }
+}
+
+.search-form {
+  position: absolute;
+  left: -308px;
+  padding: 20px 15px;
+  width: 341px;
+  height: 83px;
+  display: none;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+}
+
+.search-form__input {
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  &::-webkit-input-placeholder {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+  }
+}
+
+.user-panel__search:hover .search-form {
+  display: block;
 }
 
 .user-panel__login {
@@ -151,9 +185,11 @@
   width: 93px;
   padding-left: 44px;
   border-radius: 16px;
-
   background-image: url(../img/user-panel-login.png);
   background-position: 15px;
+  &:hover{
+    background-image: url(../img/user-panel-login-click.png);
+  }
 }
 
 .user-panel__basket {
@@ -168,6 +204,9 @@
   margin-left: 5px;
   background-image: url(../img/user-panel-basket.png);
   background-position: 15px;
+  &:hover {
+    background-image: url(../img/user-panel-basket-click.png);
+  }
 }
 
 .open-time {
