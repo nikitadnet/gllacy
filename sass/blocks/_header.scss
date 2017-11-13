@@ -177,6 +177,7 @@
 }
 
 .user-panel__login {
+  position: relative;
   display: inline-block;
   vertical-align: top;
 }
@@ -184,12 +185,83 @@
 .user-panel__btn--login {
   width: 93px;
   padding-left: 44px;
+  margin-bottom: 4px;
   border-radius: 16px;
   background-image: url(../img/user-panel-login.png);
   background-position: 15px;
   &:hover{
     background-image: url(../img/user-panel-login-click.png);
   }
+}
+
+.login-form {
+  position: absolute;
+  left: -183px;
+  padding: 20px;
+  width: 277px;
+  height: 214px;
+  display: none;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+}
+
+.login-form__input {
+  width: 100%;
+  height: 44px;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  &::-webkit-input-placeholder {
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 24px;
+    color: #999999;
+  }
+}
+
+.login-form-group-left {
+  float: left;
+  width: 50%;
+}
+
+.login-form-btn {
+  width: 100px;
+  height: 44px;
+  border: none;
+  border-radius: 25px;
+}
+
+.login-form-group-right {
+  float: right;
+  width: 50%;
+}
+
+.login-form__link {
+  display: inline-block;
+  font-family: "Roboto";
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: none;
+  &::after {
+    content: "";
+    display: block;
+    margin-top: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #adacaa;
+  }
+  &:hover {
+    color: #e84d37;
+  }
+  &:hover::after {
+    background-color: #f9cdc4;
+  }
+}
+
+.user-panel__login:hover .login-form {
+  display: block;
 }
 
 .user-panel__basket {

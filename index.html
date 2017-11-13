@@ -48,6 +48,19 @@
             </div>
             <div class="user-panel__login">
               <a href="#" class="user-panel__btn user-panel__btn--login">Вход</a>
+              <form action="index.html" class="login-form clearfix">
+                <label for="loginemail" class="visuallyhidden">Email</label>
+                <input type="email" name="login-email" value="" placeholder="Электронная почта" id="login-email" class="login-form__input">
+                <label for="login-password" class="visuallyhidden">Password</label>
+                <input type="password" name="login-password" value="" placeholder="Пароль" id="login-password" class="login-form__input">
+                <div class="login-form-group-left">
+                  <input type="submit" name="" value="Войти" class="btn login-form-btn">
+                </div>
+                <div class="login-form-group-right">
+                  <a href="#" class="login-form__link">Забыли пароль?</a>
+                  <a href="#" class="login-form__link">Новая регистрация</a>
+                </div>
+              </form>
             </div>
             <div class="user-panel__basket">
               <a href="#" class="user-panel__btn user-panel__btn--basket">Пусто</a>
